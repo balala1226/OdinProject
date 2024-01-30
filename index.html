@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="logoContainer">
+    <div id="logo">
+      <img id="logoImage" src="assets/image/odin-lined.png" alt="">
+      <p>LEAF</p>
+    </div>
+    <div id="imageCredits">
+      <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </div>
+  </div>
+
+  <div id="formContainer">
+    <div id="formDescription">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams.<br>
+          Sign up <span class="emphasized">now</span> to get started.</p>
+      <p>You <span class="emphasized">know</span> you want to.</p>
+      </div>
+    <form action="" id="form">
+      <div id="signupHeader">Let's Do This!</div>
+      <div id="signupForms">
+        <div>
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email"
+              pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|&gt;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&gt;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+              required>
+        </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" " required>
+          <div></div>
+        </div>
+        <div>
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phonenum"
+              pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
+        </div>
+        <div>
+          <label for="confirmPassword">CONFIRM PASSWORD</label>
+          <input type="password" id="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder=" " required>
+          <div></div>
+        </div>
+      </div>
+    </form>
+    <div id="formButtons">
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
