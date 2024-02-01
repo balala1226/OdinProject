@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* end reset */
+
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+.headerContainer
+{
+    background-color: #1f2937;
+    height: 250px;
+}
+
+.headerLinks
+{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerLinks p
+{
+    color: #f9faf8;
+}
+.headerLogo
+{
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.websiteDescription
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.websiteDescriptionText
+{
+    display: flex;
+    flex-direction: column;
+    color: #f9faf8;
+    width: 50%;
+}
+
+#main-text
+{
+    font-size: 48px;
+    font-weight:bold;
+}
+
+#main-text-description
+{
+    font-size: 18px;
+}
+
+#websiteDescriptionSignUpButton
+{
+    background-color: #3882f6;
+    font-size: 14px;
+    color: #f9faf8;
+    width: 100px;
+    border: 3px transparent;
+    border-radius: 5px;
+}
+
+.informationContainer
+{
+    display: flex;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.informationTitle
+{
+    font-size: 39px;
+    color: #1f2937;
+    font-weight:bold;
+}
+
+.informationGrid
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.informationGrid div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.informationGrid div img
+{
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.informationGrid div p
+{
+    text-align: center;
+}
+
+.quoteBackground
+{
+    display: flex;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.quoteContainer
+{
+    margin: 10% 10%;
+}
+
+#quote
+{
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+}
+
+#author
+{
+    text-align: right;
+}
+
+.signUpBackground
+{
+    background-color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpContainer
+{
+    width: 80%;
+    height: 60%;
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f9faf8;
+    border: 3px transparent;
+    border-radius: 5px;
+}
+
+#signup-text
+{
+    font-weight: bold;
+}
+
+.footerContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    height: 40px;
+    text-align: center;
+    color: #f9faf8;
+}
+
+#signUpContainerButton
+{
+    background-color: transparent;
+    color: #f9faf8;
+    width: 100px;
+    height: 30px;
+    border: 3px solid #f9faf8;
+    border-radius: 10px;
+}
