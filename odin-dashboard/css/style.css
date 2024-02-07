@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* end reset */
+
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+}
+
+#sidePanel {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 15vw;
+    background-color: #075985;
+    flex-direction: column;
+}
+
+#sidePanelHeader {
+    display: flex;
+    margin: 5%;
+}
+
+#sidePanelHeaderImage {
+    width: 3.2vw;
+    height: 3.2vw;
+}
+
+#sidePanelHeaderText {
+    font-weight: bold;
+    font-size: 1.8vw;
+    color: white;
+}
+
+.sidePanelGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.sidePanelItem {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.sidePanelItemImage {
+    width: 2vw;
+    height: 2vw;
+}
+
+.sidePanelItemText {
+    font-size: 0.8vw;
+    color: white;
+}
+
+#mainPanel {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 100vh;
+}
+
+#mainPanelHeader {
+    margin-top: .5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#topNav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+}
+
+#searchbutton {
+    width: 2vw;
+    height: wvw;
+    border: transparent;
+    background-color: transparent;
+}
+
+#searchBar {
+    width: 50vw;
+    background-color: #bae6fd;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1vw;
+}
+
+#navProfile {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 1%;
+}
+
+#navProfile p {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+#navProfile img {
+    width: wvw;
+    height: 2vw;
+}
+
+#profileArea {
+    display: flex;
+    margin-top: .5%;
+    flex-direction: row;
+    width: 100%;
+    height: 13vh;
+    justify-content: space-between;
+}
+
+#profileDetails {
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+#profileDetails img {
+    width: 10vmin;
+    height: 10vmin;
+}
+
+#profileActions {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.profileActionsButton {
+    background-color: #075985;
+    border: transparent;
+    border-radius: 30px;
+    color: white;
+    margin-left: 2%;
+    height: 3.5vh;
+    width: 6vw;
+    font-size: 1vw;
+}
+
+#mainPanelBody {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: #e0f2fe;
+    margin-top: .5%;
+}
+
+#project{
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 60vw;
+}
+
+.mainBodyHeader {
+    font-weight: bold;
+    font-size: 2.8vmin;
+}
+
+#projectsGrid {
+    margin-top: 1.5%;
+    display: grid;
+    grid-template-columns: 28vw 28vw;
+    grid-template-rows: 22vh 22vh;
+    grid-auto-rows: 22vh;
+    grid-auto-columns: 28vw;
+    gap: 2%
+}
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: transparent;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projectContent {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.projectTitle {
+    font-weight: bold;
+    font-size: 2.7vmin;
+}
+
+.projectDescription {
+    font-size: 2.2vmin;
+}
+
+.projectIcons {
+    margin-right: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projectIcons button {
+    border: transparent;
+    background-color: transparent;
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.projectIcons button img {
+    width: 100%;
+    height: 100%;
+}
+
+#mainBodySide {
+    margin-top: 1%;
+}
+
+#announcementsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.1%;
+    background-color: white;
+    border: transparent;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    height: 28vh;
+}
+
+.announcementItem {
+    margin: 3%;
+}
+
+.divider {
+    background-color: black;
+    height: 1px;
+}
+
+.announcementItemTitle {
+    font-weight: bold;
+    font-size: 2.7vmin;
+}
+
+.announcementItemDescription {
+    font-size: 2.2vmin;
+}
+
+#trending {
+    margin-top: 4%;
+}
+
+#trendingContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.1%;
+    background-color: white;
+    border: transparent;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    height: 34vh;
+}
+
+
+.trendingItem{
+    display: flex;
+    align-items: center;
+}
+
+.trendingItem img{
+    width: 10vmin;
+    height: 10vmin;
+}
