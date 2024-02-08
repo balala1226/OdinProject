@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="assets/scripts/library.js"></script>
+</head>
+
+<body>
+  <dialog id="addBookDialog">
+    <form id="dialogForm">
+      <div id="formHeader">New Book</div>
+      <br>
+      <div id="bookForm">
+        <div>
+          <label for="bookTitleForm">Title</label>
+          <input type="text" id="bookTitleForm" name="bookTitleForm" required>
+        </div>
+        <br>
+        <div>
+          <label for="bookAuthorForm">Author</label>
+          <input type="text" id="bookAuthorForm" name="bookAuthorForm" required>
+        </div>
+        <br>
+        <div>
+          <label for="pages">No. of Pages</label>
+          <input type="number" id="pages" name="pages" required>
+          <div></div>
+        </div>
+        <br>
+        <p>
+          <label>
+            Have read?
+            <select id="haveReadSelect">
+              <option value="default">No</option>
+              <option>Yes</option>
+            </select>
+          </label>
+        </p>
+      </div>
+    </form>
+    <br>
+    <div>
+      <button id="dialogAddBookButton" value="cancel" onclick="onDialogAddBookButtonClick()">Add Book</button>
+      <button id="dialogCloseButton" value="default" onclick="onDialogCloseButtonClick()">Close</button>
+    </div>
+  </dialog>
+
+  <div id="header">
+    <p>My Library</p>
+    <button id="addBookButton" onclick="onAddBookButtonClick()">Add Book</button>
+  </div>
+  <div id="bookContainer">
+  </div>
+</body>
+</html>
