@@ -92,6 +92,16 @@ function addBookToLibrary(title, author, pages, haveRead)
 
         haveReadButton.addEventListener("click", () => {
             haveReadHtml.innerText = "Have Read";
+
+            for(var index = 0; index < myLibrary.length; index++)
+            {
+                if (myLibrary[index].id == bookId)
+                {
+                    myLibrary[index].haveRead = true;
+                    break;
+                }
+            }
+
             haveReadButton.remove();
         });
     }
