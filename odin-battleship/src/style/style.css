@@ -140,7 +140,7 @@ button:hover {
     display: none;
     flex-direction: column;
     height: 100%;
-    width: 20vw;
+    width: 25vw;
     justify-content: space-evenly;
 }
 
@@ -165,15 +165,16 @@ button:hover {
 }
 
 .rotateButton {
-    border: transparent;
-    border-radius: 2%;
-    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.634);
-    font-family: 'Kode Mono';
-    font-size: 2vmin;
     display: flex;
-    background-color: gray;
-    height: 2vmin;
-    width: 2vmin;
+    border: transparent;
+    background-color: transparent;
+    height: 4vmin;
+    width: 4vmin;
+}
+
+.rotateButton img {
+    height: 100%;
+    width: 100%;
 }
 
 .gameBoard{

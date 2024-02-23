@@ -2,6 +2,7 @@ import { newDiv, newP, newButton } from "../helper/htmlElementsMaker";
 const ShipsLengthList = require('../ship').ShipsLengthList;
 import { showGameOverDialog } from "./gameoverDialog";
 import { resetUi } from "./resetUi";
+import RotateIcon from "../../resource/images/rotate-left.png"
 
 export class DisplayController{
     constructor(battleShipGame) {
@@ -330,6 +331,9 @@ export class DisplayController{
             const rotateButton = newButton('rotateButton');
             rotateButton.style.display = 'block';
             
+            const rotateImage= new Image();
+            rotateImage.src = RotateIcon;
+            rotateButton.appendChild(rotateImage);
             rotateButton.addEventListener("click", () => {
                 if (isHorizontal){
                     ship.style.flexDirection = 'column';
