@@ -1,0 +1,25 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 800px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+  
+/* Media Query for desktop */
+@media (min-width: 801px) {
+  #root {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
