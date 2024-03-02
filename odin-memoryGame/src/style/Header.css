@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 197, 184);
+    height: 15vh;
+    width:100%;
+    align-items: center;
+    box-shadow: 0 1px 10px black;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gameDescription{
+  font-size: calc(18px + 0.5vw);
+  line-height: 0.9;
+  margin:0;
+}
