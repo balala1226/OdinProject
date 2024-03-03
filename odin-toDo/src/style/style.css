@@ -64,6 +64,9 @@ header {
     align-items: center;
     background-color: #082f49;
     height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
 }
 
 header p {
@@ -74,6 +77,7 @@ header p {
 
 #content {
     display: flex;
+    padding-top: 10vh;
 }
 
 #sidePanel {
