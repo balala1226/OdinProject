@@ -1,0 +1,39 @@
+.noItemsContainer{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    height: 84vh;
+}
+
+.noItemsText{
+    font-size: calc(25px + 1vw);
+    font-weight: bold;
+    margin:0;
+    font-family: 'Permanent Marker';
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.cartHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cartHeaderText{
+    font-size: calc(25px + 1vw);
+    font-weight: bold;
+    margin:0;
+    font-family: 'Permanent Marker';
+    text-align: center;
+}

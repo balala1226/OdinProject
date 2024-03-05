@@ -1,0 +1,56 @@
+.searchParameterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2%;
+    gap: 10px;
+}
+
+.currentProductCategory{
+    font-size: calc(20px + 1vw);
+    line-height: 0.9;
+    margin:0;
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 800px) {
+    .searchParametersContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    
+}
+
+/* Media Query for desktop */
+@media (min-width: 801px) {
+    .searchParametersContainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    
+}
+
+.searchItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.productsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}

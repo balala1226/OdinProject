@@ -1,0 +1,29 @@
+.homeContent{
+    background-image: url('../assets/store-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 84vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeDescription{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 10vh;
+}
+
+.homeText{
+    position: relative;
+    top: 0;
+    font-size: calc(50px + 1vw);
+    line-height: 0.9;
+    margin:0;
+    font-weight: bold;
+    color: rgb(255, 77, 0);
+    font-family: 'Permanent Marker';
+    text-shadow: 2px 3px 1px black;
+}

@@ -1,0 +1,84 @@
+header{
+  display: flex;
+  background-color: rgb(83, 83, 83);
+  height: 12vh;
+  width:100%;
+  box-shadow: 0 1px 10px black;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logoContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  width: 50%;
+}
+
+.logoLink{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-decoration: inherit;
+}
+.logoLink:hover{
+  color: rgb(164, 164, 164);
+}
+
+.productAndCart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.headerItem{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerItemLink{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-decoration: inherit;
+}
+.headerItemLink:hover{
+  color: rgb(164, 164, 164);
+}
+.headerCart:hover{
+  color: rgb(164, 164, 164);
+}
+
+.headerItemText{
+  font-size: calc(15px + 0.5vw);
+}
+
+.headerCartContainer{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cartLengthContainer{
+  height: 3.5vmin;
+  width: 3.5vmin;
+  background-color:  rgb(255, 77, 0);
+  border-radius: 50%;
+  position: relative;
+  bottom: 17%;
+  right: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
