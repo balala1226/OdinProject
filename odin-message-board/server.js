@@ -1,4 +1,6 @@
 const express = require('express')
+const port = process.env.PORT || 8080;
+
 const app = express()
 
 app.use(express.static('public'))
@@ -14,4 +16,6 @@ app.use((req, res, next) => {
     res.status(404).send("Page not found")
 })
 
-app.listen(8080) 
+app.listen(port, () => {
+    console.log(`App listening at http://localhost:${port}`);
+});
