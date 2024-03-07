@@ -1,5 +1,6 @@
 const express = require('express')
-const port = process.env.PORT || 8080;
+require("dotenv").config();
+const port = process.env.PORT || process.env.DEV_PORT;
 
 const app = express()
 
@@ -7,10 +8,7 @@ const app = express()
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const dev_db_url =
-  "mongodb+srv://balalala1226:pO9MwGF86UZCYV4C@cluster0.agsgxoy.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
-const mongoDB = process.env.MONGODB_URI || dev_db_url;
-
+const mongoDB = process.env.MONGODB_URI;
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
