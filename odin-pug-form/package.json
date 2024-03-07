@@ -10,6 +10,7 @@
     "pug": "^3.0.2"
   },
   "scripts": {
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon app.js",
+    "start": "node app.js"
   }
 }
