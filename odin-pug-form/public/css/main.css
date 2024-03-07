@@ -1,0 +1,58 @@
+body{
+    display:flex;
+    font-family: 'Arial';
+    min-height: 90vh;
+    gap: 2%;
+}
+
+.sidebar-nav{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    gap:5%;
+    margin-top: 5%;
+    padding-left: 2%;
+}
+
+nav{
+    display: flex;
+    flex-direction:column;
+    line-height: 1.4;
+}
+
+a{
+    color: rgb(0, 123, 255);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 138, 138);
+    cursor: pointer;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
+.formInput{
+    width: 40%;
+}
+
+.submitButton{
+    width: 10%;
+    height: 5vh;
+    background-color: rgb(0, 123, 255);
+    border-radius: 10%;
+    border: 1px solid black;
+}
+.submitButton:hover{
+    background-color: rgb(0, 138, 138);
+    cursor: pointer;
+}
