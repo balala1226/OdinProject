@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+</head>
+<body>
+    <h1><%=locals.title%></h1>
+    <%locals.messages.forEach(message => { %>
+        <p style="font-weight: bold;"><%=message.user%></p>
+        <p><%=message.text%></p>
+        <p style="font-style: italic;"><%=message.added%></p>
+        <br>  
+    <%})%>
+
+    <a href="/new">
+        <button style="width: 20%;">Add Message</button>
+    </a>
+</body>
+</html>
