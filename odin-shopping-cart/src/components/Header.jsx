@@ -31,7 +31,7 @@ class Header extends Component{
           <Link to="/cart" className='headerItemLink'>
             <div className='headerItem'>
               <Icon path={mdiCartVariant} size={'6vmin'} className='headerCart' />
-              <div className='cartLengthContainer' style={this.props.cartLength > 0 ? {backgroundColor: 'rgb(255, 77, 0)'} : {backgroundColor: 'transparent'}}>
+              <div className='cartLengthContainer' style={this.props.cartLength > 0 ? {backgroundColor: 'rgb(0, 0, 0)'} : {backgroundColor: 'transparent'}}>
                 <p className='cartLength'>{this.props.cartLength > 0 ? this.props.cartLength : ""}</p>
               </div>
             </div>
